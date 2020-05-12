@@ -4,6 +4,7 @@ import com.solvd.lab.automation.formatter.util.*;
 
 public class Formatter {
     public static void main(String[] args) {
+
         String input = "public class NoSuchTransport extends Exception{public NoSuchTransport(String message) {super(message);if(aaa){aaa+b=5;return b;}}}";
         input = BraceUtil.normalizeSharpBraces(input);
         input = StatementUtil.normalizeIfs(input);
