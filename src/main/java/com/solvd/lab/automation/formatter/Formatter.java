@@ -16,8 +16,8 @@ public class Formatter {
         input = OperatorUtil.normalizeDivide(input);
         input = OperatorUtil.normalizeEq(input);
         input = SpaceUtil.normalizeSpaces(input);
-        input = TabUtil.normalizeTabs(input);
         input = StatementUtil.normalizeSemicolons(input);
+        input = TabUtil.normalizeTabs(input);
         System.out.println(input);
 
     }
